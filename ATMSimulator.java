@@ -47,8 +47,6 @@ public class ATMSimulator {
                         initialBalance+=deposit;
                         successfulTransactions++;
                         System.out.println("initial balance is "+initialBalance);
-                        System.out.println("your successful transaction is"+successfulTransactions);
-                    }
                     break;
                 }
                 case 3:{
@@ -64,10 +62,9 @@ public class ATMSimulator {
                         initialBalance-=withdraw;
                         successfulTransactions++;
                         System.out.println("your balance now is"+initialBalance);
-                         System.out.println("your successful transaction is"+successfulTransactions);
 
                         if (initialBalance==0){
-                            System.out.println("transactions cancelled");
+                            System.out.println("warning your balance now is zero ");
                         }
 
                     }
@@ -84,20 +81,19 @@ public class ATMSimulator {
                     else{
                         System.out.println("low balance");
                     }
+                    break;
+                
+                case 5:{
+                    System.out.println("thank you for using our ATM");
+                    
                     System.out.println("Successful transactions is"+successfulTransactions);
                     break;
                 }
-                case 5:{
-                    System.out.println("thank you for using our ATM");
-                    break;
-                }
 
-                default:
+                default:{
 
              System.out.println("invalid option");
-
-                if(Choice==5)
-        break;
+                    break;
         }
 
         }while (Choice!=5);
