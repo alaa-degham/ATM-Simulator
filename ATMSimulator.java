@@ -47,6 +47,7 @@ public class ATMSimulator {
                         initialBalance+=deposit;
                         successfulTransactions++;
                         System.out.println("initial balance is "+initialBalance);
+                        System.out.println("your successful transaction is"+successfulTransactions);
                     }
                     break;
                 }
@@ -63,6 +64,7 @@ public class ATMSimulator {
                         initialBalance-=withdraw;
                         successfulTransactions++;
                         System.out.println("your balance now is"+initialBalance);
+                         System.out.println("your successful transaction is"+successfulTransactions);
 
                         if (initialBalance==0){
                             System.out.println("transactions cancelled");
